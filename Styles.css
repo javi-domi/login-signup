@@ -1,0 +1,176 @@
+/*----------------Globales--------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.white-bkg {
+  background: white;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 2px;
+}
+a {
+  color: #385185;
+}
+/*----------------Pantalla principal-------------------------*/
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  margin: auto;
+}
+main {
+  justify-content: start;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+#cellphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+#instagram {
+  width: 50rem;
+}
+#main-info {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 32px;
+}
+/*---------------------------------Log In ----- Sign Up ---------------------------------*/
+#ig-logo {
+  margin-top: 22px;
+  margin-bottom: 12px;
+  width: 50%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+input {
+  width: 266px;
+  height: 36px;
+  padding: 8px;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 4px;
+  margin-bottom: 6px;
+  color: rgb(88, 88, 88);
+}
+input:focus {
+  border-radius: 4px;
+  border: none;
+}
+#login-btn {
+  align-items: stretch;
+  margin: 8px 40px;
+  height: auto;
+}
+#login-btn .btn {
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #0095f6;
+  color: white;
+  font-weight: 600;
+}
+#separador {
+  color: rgb(88, 88, 88);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 40px 18px;
+}
+.gray-line {
+  height: 1px;
+  width: 100px;
+  background-color: rgb(173, 173, 173);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: stretch;
+}
+#other-links {
+  display: flex;
+  flex-direction: column;
+}
+#fb-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+#fb-logo {
+  width: 16px;
+  margin-right: 8px;
+}
+#forgot-password {
+  margin: 12px 0;
+  font-size: 12px;
+}
+#signup {
+  margin: 10px 0;
+  padding: 30px 0;
+  font-weight: 600;
+}
+#app {
+  margin: 10px 0 32px;
+}
+.app-btn {
+  width: 136px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+}
+#btn-section {
+  margin-top: 12px;
+}
+#app-store {
+  background-image: url(/Img/apple-button.png);
+  background-size: contain;
+}
+#play-store {
+  background-image: url(/Img/googleplay-button.png);
+  background-size: contain;
+}
+/*-------------------------------Media Queries-----------------------------*/
+@media (max-width: 900px) {
+  #cellphone {
+    width: 45%;
+  }
+  #instagram {
+    width: 50rem;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: block;
+    margin: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #cellphone {
+    display: none;
+  }
+}
